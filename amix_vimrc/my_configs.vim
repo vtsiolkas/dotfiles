@@ -1,5 +1,6 @@
 " Remapping command key to semicolon
 nmap ; :
+vmap ; :
 
 " Enable mouse
 set mouse=a
