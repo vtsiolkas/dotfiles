@@ -5,6 +5,9 @@ vmap ; :
 " Enable mouse
 set mouse=a
 
+" Remap jj to <Esc>
+inoremap jj <Esc>
+
 " Highlight trailing spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
