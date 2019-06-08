@@ -23,6 +23,11 @@ append_if_not_exists ~/.bashrc "stty -ixon"
 # Set vim as default editor
 append_if_not_exists ~/.bashrc "export EDITOR=vim"
 
+# Bash history related changes
+append_if_not_exists ~/.bashrc 'export HISTTIMEFORMAT="%h %d %H:%M:%S"'
+append_if_not_exists ~/.bashrc 'export HISTSIZE=10000'
+append_if_not_exists ~/.bashrc 'PROMPT_COMMAND="history -a"'
+append_if_not_exists ~/.bashrc 'export HISTIGNORE="ls:gs:htop:history"'
 
 ##############################################
 # Copy our bash aliases to ~/.bash_aliases
